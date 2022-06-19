@@ -36,15 +36,21 @@
   <body>
     <div class="wrapper">
       <h1>영찬이 폰 앱으로 이동하기 테스트!!</h1>
-      <a id="link" class="link">이동하자!</a>
+      <a id="prod-link" class="link">(prod) 이동하자!</a>
+      <a id="staging-link" class="link">(staging) 이동하자!</a>
     </div>
   </body>
 
   <script>
-    var link = document.getElementById("link");
-    var linkUrl =
-      "https://momsitter.page.link/?link=https://www.mom-sitter.com/?moveTo=momsitter://apply/job/state&apn=com.momsitter.android.hybridapp&isi=1452104879&ibi=com.momsitter.dev.native&efr=1";
+    var prodLink = document.getElementById("prod-link");
+    var stagingLink = document.getElementById("staging-link");
 
-    link.href = linkUrl;
+    var prodLinkUrl =
+      "https://momsitter.page.link/?link=https://www.mom-sitter.com/?moveTo=momsitter://apply/job/state&apn=com.momsitter.android.hybridapp&isi=1452104879&ibi=com.momsitter.dev.native&efr=1";
+    var stagingLinkUrl =
+      "https://momsitterstage.page.link/?link=https://www.mom-sitter.com/?moveTo=momsitter://apply/job/state&apn=com.momsitter.android.hybridapp&isi=1452104879&ibi=com.momsitter.dev.native&efr=1";
+
+    prodLink.href = prodLinkUrl;
+    stagingLink.href = stagingLinkUrl;
   </script>
 </html>
